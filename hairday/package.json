@@ -1,0 +1,25 @@
+{
+  "name": "hairday_project",
+  "version": "1.0.0",
+  "description": "Making website for Hair Day salon using Bootstrap. To submit as a Meta Front-end developer course simple project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hairday",
+    "hair",
+    "day",
+    "project",
+    "simple",
+    "project"
+  ],
+  "author": "UnicornDevCraft",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
