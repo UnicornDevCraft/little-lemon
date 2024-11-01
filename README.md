@@ -1,2 +1,2 @@
-# hair-day
-A simple website for the Hair Day beauty salon. 
+# little-lemon
+A simple website for the Little Lemon restaurant. 
