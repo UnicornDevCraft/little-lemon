@@ -1,0 +1,158 @@
+/* stylelint-disable selector-id-pattern */
+
+
+// Importing custom colors
+@import '../custom';
+
+// Base styles for navbar
+.navbar {
+    // Hide togglers by default
+    .navbar-toggler {
+        &.d-lg-none {
+            display: none; 
+        }
+      
+        &.d-md-none {
+            display: none;
+        }
+    }
+
+    // Adding custom style and effects to links
+    .navbar-nav {
+        .nav-link {
+            padding: 8px 12px;
+            color: $nav-link-color !important;
+            font-family: Lora, serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+            i {
+                color: $success;
+            }
+
+            i:hover {
+                color: $primary;
+            }
+        }
+
+        .nav-link:hover {
+            color: $nav-link-hover-color !important;
+            text-shadow: 1px 1px 5px $light-yellow;
+        }
+
+        .nav-link:active {
+            color: $nav-link-hover-color !important;
+        }
+    }
+}
+
+// Base styling for offcanvas menu
+.offcanvas-title {
+    font-family: 'Bigshot One', sans-serif;
+    color: $primary;
+}
+
+// Adding custom style and effects to links within offcanvas menu
+.offcanvas-body .navbar-nav .nav-item {
+    .nav-link {
+        color: $nav-link-color !important;
+        font-family: 'Cantata One', sans-serif;
+    }
+
+    .nav-link:hover {
+        color: $nav-link-hover-color !important;
+        text-shadow: 1px 1px 5px $light-yellow;
+    }
+
+    .nav-link:active {
+        color: $nav-link-hover-color !important;
+    }
+}
+
+// On desktop show left and right menus
+@media (width >= 992px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .navbar-brand {
+            justify-self: center;
+        }
+    }
+
+    // Hide left menu toggler and offcanvas menus
+    .navbar-toggler.d-lg-none {
+        display: none; 
+    }
+
+    // Proper positioning of navbar items
+    #offcanvasLeft, #offcanvasMobile {
+        display: none;
+    }
+
+    #navbarRight, #navbarLeft {
+        max-width: fit-content;
+    }
+
+    #navbarRight {
+        justify-self: end;
+    }
+
+    #navbarLeft {
+        justify-self: start;
+    }
+}
+
+// Tablet view
+@media (width >= 768px) and (width <= 991px) {
+    // Positioning for navbar items
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        // Show left menu toggler and hide left menu
+        .navbar-toggler.d-lg-none {
+            display: inline-block !important;
+            max-width: min-content; 
+        }
+
+        #navbarLeft {
+            display: none; 
+        }
+
+        #navbarRight {
+            justify-self: end;
+        }
+
+        #navbarRight ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// Mobile view
+@media (width <= 767px) {
+    // Align logo to the left
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .navbar-brand {
+            max-width: fit-content;
+            justify-self: start;
+        }
+    }
+
+    // Show mobile toggler
+    .navbar-toggler.d-md-none {
+        display: inline-block !important; 
+    }
+
+    // Hide both menus on mobile
+    #navbarLeft, #navbarRight {
+        display: none; 
+    }
+}

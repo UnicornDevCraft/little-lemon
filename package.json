@@ -1,16 +1,15 @@
 {
-  "name": "hairday_project",
+  "name": "little_lemon_project",
   "version": "1.0.0",
-  "description": "Making website for Hair Day salon using Bootstrap. To submit as a Meta Front-end developer course simple project.",
+  "description": "Making website for Little Lemon restaurant using Bootstrap. To submit as a Meta Front-end developer course simple project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass --watch src/css/scss:src/css/css"
   },
   "keywords": [
-    "hairday",
-    "hair",
-    "day",
-    "project",
+    "little-lemon",
+    "lemon",
+    "little",
     "simple",
     "project"
   ],
@@ -19,10 +18,10 @@
   "devDependencies": {
     "sass": "^1.80.5",
     "stylelint": "^16.10.0",
-    "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.11.3"
   }
 }
