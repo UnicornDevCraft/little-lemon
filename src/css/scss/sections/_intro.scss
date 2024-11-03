@@ -1,0 +1,27 @@
+// Importing custom colors
+@import '../custom';
+
+.welcome-section {
+    width: 100%;
+    height: 100%;
+    background-color: $light;
+
+    .welcome-text {
+        padding: 12rem 0 3rem 12rem;
+
+        h1 {
+            font-family: Italiana, sans-serif;
+            color: $secondary;
+        }
+    }
+
+    
+
+    .welcome-image {
+        width: 30%;
+        position: relative;
+        top: -6rem;
+        left: 8rem;
+    }
+    
+}

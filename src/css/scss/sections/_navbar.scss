@@ -23,9 +23,6 @@
             padding: 8px 12px;
             color: $nav-link-color !important;
             font-family: Lora, serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
 
             i {
                 color: $success;
@@ -73,8 +70,8 @@
 // On desktop show left and right menus
 @media (width >= 992px) {
     .navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid !important; 
+        grid-template-columns: repeat(3, 1fr);
         
         .navbar-brand {
             justify-self: center;
@@ -96,11 +93,13 @@
     }
 
     #navbarRight {
+        margin-right: 4rem;
         justify-self: end;
     }
 
     #navbarLeft {
         justify-self: start;
+        margin-left: 4rem;
     }
 }
 
@@ -108,13 +107,13 @@
 @media (width >= 768px) and (width <= 991px) {
     // Positioning for navbar items
     .navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
 
         // Show left menu toggler and hide left menu
         .navbar-toggler.d-lg-none {
             display: inline-block !important;
-            max-width: min-content; 
+            max-width: fit-content; 
         }
 
         #navbarLeft {
@@ -137,11 +136,10 @@
 @media (width <= 767px) {
     // Align logo to the left
     .navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
 
         .navbar-brand {
-            max-width: fit-content;
             justify-self: start;
         }
     }
