@@ -25,24 +25,26 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                  START THE NAVBAR SECTION  
     /////////////////////////////////////////////////////////////////////////////////////////////-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-4">
-        <!-- Toggler for Left Menu -->
-        <button class="navbar-toggler d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+    <nav class="navbar navbar-expand-lg navbar-light d-grid bg-light fixed-top px-4">
+        <!-- Toggler for the left menu -->
+        <button class="navbar-toggler d-lg-none d-md-block d-none me-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <!-- Logo -->
         <a class="navbar-brand mx-auto order-lg-2" href="#">
-            <img src="../assets/images/logo_horizon_yell.png" alt="Logo" height="40">
+            <img src="../assets/images/logo_horizon_yell.png" alt="Logo" height="48">
         </a>
-
-        <!-- Toggler for Combined Offcanvas Menu -->
-        <button class="navbar-toggler d-md-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobile" aria-controls="offcanvasMobile">
+    
+        <!-- Toggler for combined offcanvas menu -->
+        <button class="navbar-toggler d-md-none ms-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-combined" aria-controls="offcanvas-combined">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <!-- Left Menu -->
-        <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbarLeft">
+        <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbar-left">
             <ul class="navbar-nav me-auto gap-3">
                 <li class="nav-item me-4">
                     <a class="nav-link" href="#">Menu</a>
@@ -58,9 +60,9 @@
                 </li>
             </ul>
         </div>
-
+    
         <!-- Right Menu -->
-        <div class="collapse navbar-collapse d-none d-md-block order-lg-3" id="navbarRight">
+        <div class="collapse navbar-collapse d-none d-md-flex order-lg-3" id="navbar-right">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Follow on:</a>
@@ -77,11 +79,11 @@
             </ul>
         </div>
     </nav>
-
+    
     <!-- Offcanvas for Left Menu -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-leftLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLeftLabel">Little Lemon</h5>
+            <h5 class="offcanvas-title" id="offcanvas-leftLabel">Little Lemon</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -101,11 +103,11 @@
             </ul>
         </div>
     </div>
-
+    
     <!-- Combined Offcanvas menu -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMobile" aria-labelledby="offcanvasMobileLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined" aria-labelledby="offcanvas-combinedLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasMobileLabel">Little Lemon</h5>
+            <h5 class="offcanvas-title" id="offcanvas-combinedLabel">Little Lemon</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -138,13 +140,13 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                    START THE WELCOME SECTION
     /////////////////////////////////////////////////////////////////////////////////////////////-->
-    <header id="home" class="welcome-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 welcome-text text-start">
-                    <h1 class="display-1">Little Lemon invites you in! </h1>
+    <header id="home" class="welcome-section bg-light my-5">
+        <div class="container text-start">
+            <div class="row py-5">
+                <div class="col-12 col-md-6 welcome-text align-self-end">
+                    <h1 class="display-1">Little Lemon<br> invites you in!</h1>
                 </div>
-                <div class="col-md-5 welcome-image">
+                <div class="col-12 col-md-6 welcome-image align-self-start">
                     <dotlottie-player src="https://lottie.host/ba535681-5caa-4019-9a38-e16692c2370e/VxWvVRUUdD.json" class="lemon-hi" background="transparent" speed="1" loop autoplay></dotlottie-player>
                 </div>
             </div>

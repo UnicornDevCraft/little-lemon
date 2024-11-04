@@ -1,50 +1,68 @@
-/* stylelint-disable selector-id-pattern */
-
-
 // Importing custom colors
 @import '../custom';
 
-// Base styles for navbar
+// Styling navbar
 .navbar {
-    // Hide togglers by default
-    .navbar-toggler {
-        &.d-lg-none {
-            display: none; 
-        }
-      
-        &.d-md-none {
-            display: none;
-        }
-    }
+    grid-template-columns: repeat(3, 1fr);
 
     // Adding custom style and effects to links
     .navbar-nav {
         .nav-link {
             padding: 8px 12px;
-            color: $nav-link-color !important;
+            color: $secondary;
             font-family: Lora, serif;
 
             i {
+                font-size: large;
                 color: $success;
+
+                &:hover {
+                    color: $primary;
+                }
             }
 
-            i:hover {
+            &:hover {
                 color: $primary;
-            }
+                text-shadow: 1px 1px 5px $light-yellow;
+            }   
+        }
+    }
+
+    #navbar-right {
+        justify-self: end;
+        
+        @include media-breakpoint-up(lg) {
+            margin-right: 3rem;
         }
 
-        .nav-link:hover {
-            color: $nav-link-hover-color !important;
-            text-shadow: 1px 1px 5px $light-yellow;
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
         }
+    }
 
-        .nav-link:active {
-            color: $nav-link-hover-color !important;
+    #navbar-left {
+        justify-self: start;
+        
+        @include media-breakpoint-up(lg) {
+            margin-left: 3rem;
+        }
+    }
+
+    .navbar-toggler.d-md-block {
+        max-width: 22%;
+    }
+
+    @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .navbar-brand {
+            justify-self: start;
         }
     }
 }
 
-// Base styling for offcanvas menu
+// Styling for offcanvas menu
 .offcanvas-title {
     font-family: 'Bigshot One', sans-serif;
     color: $primary;
@@ -53,104 +71,12 @@
 // Adding custom style and effects to links within offcanvas menu
 .offcanvas-body .navbar-nav .nav-item {
     .nav-link {
-        color: $nav-link-color !important;
+        color: $secondary;
         font-family: 'Cantata One', sans-serif;
-    }
 
-    .nav-link:hover {
-        color: $nav-link-hover-color !important;
-        text-shadow: 1px 1px 5px $light-yellow;
-    }
-
-    .nav-link:active {
-        color: $nav-link-hover-color !important;
-    }
-}
-
-// On desktop show left and right menus
-@media (width >= 992px) {
-    .navbar {
-        display: grid !important; 
-        grid-template-columns: repeat(3, 1fr);
-        
-        .navbar-brand {
-            justify-self: center;
+        &:hover {
+            color: $primary;
+            text-shadow: 1px 1px 5px $light-yellow;
         }
-    }
-
-    // Hide left menu toggler and offcanvas menus
-    .navbar-toggler.d-lg-none {
-        display: none; 
-    }
-
-    // Proper positioning of navbar items
-    #offcanvasLeft, #offcanvasMobile {
-        display: none;
-    }
-
-    #navbarRight, #navbarLeft {
-        max-width: fit-content;
-    }
-
-    #navbarRight {
-        margin-right: 4rem;
-        justify-self: end;
-    }
-
-    #navbarLeft {
-        justify-self: start;
-        margin-left: 4rem;
-    }
-}
-
-// Tablet view
-@media (width >= 768px) and (width <= 991px) {
-    // Positioning for navbar items
-    .navbar {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-
-        // Show left menu toggler and hide left menu
-        .navbar-toggler.d-lg-none {
-            display: inline-block !important;
-            max-width: fit-content; 
-        }
-
-        #navbarLeft {
-            display: none; 
-        }
-
-        #navbarRight {
-            justify-self: end;
-        }
-
-        #navbarRight ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }
-}
-
-// Mobile view
-@media (width <= 767px) {
-    // Align logo to the left
-    .navbar {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-
-        .navbar-brand {
-            justify-self: start;
-        }
-    }
-
-    // Show mobile toggler
-    .navbar-toggler.d-md-none {
-        display: inline-block !important; 
-    }
-
-    // Hide both menus on mobile
-    #navbarLeft, #navbarRight {
-        display: none; 
     }
 }

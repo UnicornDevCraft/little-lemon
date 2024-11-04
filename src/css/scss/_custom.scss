@@ -41,12 +41,6 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
-// Navbar overrides
-$nav-link-color: $secondary;
-$nav-link-hover-color: $primary;
-$nav-link-transition: color .15s ease-in-out, $primary .15s ease-in-out, $secondary .15s ease-in-out;
-$nav-link-disabled-color: $light;
-
 // Accordion overrides
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;

@@ -2,26 +2,45 @@
 @import '../custom';
 
 .welcome-section {
-    width: 100%;
-    height: 100%;
-    background-color: $light;
-
     .welcome-text {
-        padding: 12rem 0 3rem 12rem;
-
         h1 {
             font-family: Italiana, sans-serif;
             color: $secondary;
+            font-weight: 600;
+            font-size: 3rem;
+            padding: 1.5rem 1rem 3rem 2rem;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 3.2rem;
+                padding: 1.5rem 0 3rem 4.5rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 3.5rem;
+                padding: 5rem 0 3rem 0.5rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 4.5rem;
+                padding: 6rem 0 4rem 0.5rem;
+            }
         }
     }
 
-    
-
     .welcome-image {
-        width: 30%;
-        position: relative;
-        top: -6rem;
-        left: 8rem;
+        .lemon-hi {
+            width: 100%;
+            margin-top: -4rem;
+            padding: 0 0 2rem;
+
+            @include media-breakpoint-up(sm) {
+                margin-top: -3.5rem;
+                padding: 0 0 2rem 10rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding: 0;
+            }
+        }
     }
-    
 }
