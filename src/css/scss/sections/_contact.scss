@@ -1,0 +1,13 @@
+// Importing custom colors
+@import '../custom';
+
+// Styling contact us section
+.contact-us {
+    margin: 3rem auto;
+
+    h2 {
+        font-size: 3rem;
+        font-family: Italiana, sans-serif;
+        font-weight: 600;
+    }
+}

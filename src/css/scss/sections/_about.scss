@@ -1,0 +1,71 @@
+// Importing custom colors
+@import '../custom';
+
+// Styling about us section
+.about-us {
+    margin: 12rem auto;
+    min-height: 80vh;
+
+    .story {
+        margin-left: 3.5rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 5rem;
+        font-family: Italiana, sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: Lora, sans-serif;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        margin: 3.5rem 0 3.5rem 3.5rem;
+        font-size: 2rem;
+        font-family: Italiana, sans-serif;
+        font-weight: 600;
+    }
+
+    .cards {
+        margin-top: 10rem;
+    }
+
+    .card {
+        width: 30rem;
+        border-radius: 45px;
+        
+        img {
+            width: 80% !important;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            margin: 2.5rem auto 0.5rem;
+        }
+    }
+
+    .card-body {
+        margin-bottom: 1rem;
+
+        .card-title {
+            margin: 0 2.5rem 0.5rem;
+
+        }
+
+        .card-subtitle {
+            margin: 0 2.5rem;
+        }
+
+        .card-text {
+            margin: 1rem 2.5rem 2rem;
+            font-size: 1rem;
+        }
+
+        .card-link {
+            margin-left: 20rem;
+        }
+
+    }
+}

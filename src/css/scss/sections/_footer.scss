@@ -1,0 +1,21 @@
+@import '../custom';
+
+// Styling the footer
+.footer {
+    .row.d-flex {
+        margin-left: 0;
+        
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-left: -2rem;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+        
+    }
+}

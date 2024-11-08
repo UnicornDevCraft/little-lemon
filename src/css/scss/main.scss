@@ -8,6 +8,9 @@
 
 // Import the sections
 @use 'sections/navbar';
+@use 'sections/welcome';
 @use 'sections/intro';
-@use 'sections/footer'
+@use 'sections/about';
+@use 'sections/contact';
+@use 'sections/footer';
 

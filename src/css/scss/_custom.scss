@@ -16,17 +16,7 @@ $green: #198754;
 $keppel: #58b09c;
 $teal: #20c997;
 $cyan: #0dcaf0;
-$nyanza: #CAF7E2;
-
-// Import theme color variables
-$primary: $gold;
-$success: $keppel;
-$info: $cyan;
-$warning: $yellow;
-$secondary: $feldgrau;
-$danger: $red;
-$light: $nyanza;
-$dark: $midnight-green;
+$nyanza: #caf7e2;
 
 // Import white and gray colors
 $white: #fff;
@@ -40,6 +30,16 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
+
+// Import theme color variables
+$primary: $gold;
+$success: $keppel;
+$info: $white;
+$warning: $yellow;
+$secondary: $feldgrau;
+$danger: $red;
+$light: $nyanza;
+$dark: $midnight-green;
 
 // Accordion overrides
 $accordion-icon-color: $primary;
