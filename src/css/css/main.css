@@ -53867,8 +53867,18 @@ textarea.form-control-lg {
   }
 }
 .about-us {
-  margin: 12rem auto;
+  margin: 2rem auto;
   min-height: 80vh;
+}
+@media (min-width: 768px) {
+  .about-us {
+    margin: 3rem auto;
+  }
+}
+@media (min-width: 992px) {
+  .about-us {
+    margin: 12rem auto;
+  }
 }
 .about-us .story {
   margin-left: 3.5rem;
@@ -53885,17 +53895,53 @@ textarea.form-control-lg {
   margin-bottom: 2rem;
 }
 .about-us h3, .about-us .h3 {
-  margin: 3.5rem 0 3.5rem 3.5rem;
+  margin: 2rem 0 1rem 3.5rem;
   font-size: 2rem;
   font-family: Italiana, sans-serif;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .about-us h3, .about-us .h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .about-us h3, .about-us .h3 {
+    margin: 3.5rem 0 3.5rem 3.5rem;
+  }
+}
 .about-us .cards {
-  margin-top: 10rem;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .about-us .cards {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .about-us .cards {
+    margin-top: 12rem;
+  }
 }
 .about-us .card {
-  width: 30rem;
+  width: 80%;
   border-radius: 45px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .about-us .card {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .about-us .card {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .about-us .card {
+    width: 100%;
+  }
 }
 .about-us .card img {
   width: 80% !important;
@@ -53904,20 +53950,19 @@ textarea.form-control-lg {
   margin: 2.5rem auto 0.5rem;
 }
 .about-us .card-body {
-  margin-bottom: 1rem;
+  margin: 1rem 1.5rem;
 }
 .about-us .card-body .card-title {
-  margin: 0 2.5rem 0.5rem;
+  margin-bottom: 1rem;
 }
 .about-us .card-body .card-subtitle {
-  margin: 0 2.5rem;
+  margin-bottom: 1rem;
 }
 .about-us .card-body .card-text {
-  margin: 1rem 2.5rem 2rem;
   font-size: 1rem;
 }
 .about-us .card-body .card-link {
-  margin-left: 20rem;
+  margin: 1rem;
 }
 
 :root {

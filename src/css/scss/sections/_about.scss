@@ -3,8 +3,16 @@
 
 // Styling about us section
 .about-us {
-    margin: 12rem auto;
+    margin: 2rem auto;
     min-height: 80vh;
+
+    @include media-breakpoint-up(md) {
+        margin: 3rem auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin: 12rem auto;
+    }
 
     .story {
         margin-left: 3.5rem;
@@ -24,20 +32,48 @@
     }
 
     h3 {
-        margin: 3.5rem 0 3.5rem 3.5rem;
+        margin: 2rem 0 1rem 3.5rem;
         font-size: 2rem;
         font-family: Italiana, sans-serif;
         font-weight: 600;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1.5rem;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            margin: 3.5rem 0 3.5rem 3.5rem;
+        }
+        
     }
 
     .cards {
-        margin-top: 10rem;
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 12rem;
+        }
     }
 
     .card {
-        width: 30rem;
+        width: 80%;
         border-radius: 45px;
+        margin: 0 auto;
         
+        @include media-breakpoint-up(md) {
+            width: 90%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+        }
+        
+        
+
         img {
             width: 80% !important;
             border-top-left-radius: 45px;
@@ -47,24 +83,22 @@
     }
 
     .card-body {
-        margin-bottom: 1rem;
+        margin: 1rem 1.5rem;
 
         .card-title {
-            margin: 0 2.5rem 0.5rem;
-
+            margin-bottom: 1rem;
         }
 
         .card-subtitle {
-            margin: 0 2.5rem;
+            margin-bottom: 1rem;
         }
 
         .card-text {
-            margin: 1rem 2.5rem 2rem;
             font-size: 1rem;
         }
 
         .card-link {
-            margin-left: 20rem;
+            margin: 1rem;
         }
 
     }
