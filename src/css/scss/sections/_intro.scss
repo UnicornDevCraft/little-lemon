@@ -1,6 +1,8 @@
 // Importing custom colors
 @import '../custom';
 
+
+// Styling intro section
 .intro-section {
     .row {
         min-height: 350px;
@@ -73,7 +75,6 @@
             }
         }
         
-
         .text-secondary {
             border-top-right-radius: 45px;
         }
@@ -120,10 +121,7 @@
                 @include media-breakpoint-up(lg) {
                     border-radius: 45px;
                 }
-            }
-            
-
-            
+            }   
         }
 
         .lemonade {
@@ -137,8 +135,5 @@
                 margin-right: auto;
             }
         }
-    }
-
-
-    
+    } 
 }

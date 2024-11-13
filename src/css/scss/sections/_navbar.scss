@@ -5,6 +5,10 @@
 .navbar {
     grid-template-columns: repeat(3, 1fr);
 
+    .navbar-brand img {
+            height: 48px;
+        }
+
     // Adding custom style and effects to links
     .navbar-nav {
         .nav-link {

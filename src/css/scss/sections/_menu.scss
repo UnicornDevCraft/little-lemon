@@ -1,0 +1,73 @@
+// Importing custom colors
+@import '../custom';
+
+.menu {
+    .menu-header {
+        padding-top: 6rem;
+        padding-bottom: 0;
+
+        h1 {
+            font-family: "Bigshot One", sans-serif;
+            color: $primary;
+        }
+
+        p {
+            font-family: Lora, sans-serif;
+            color: $secondary;
+        }
+    }
+    
+    .menu-section {
+        margin-bottom: 50px;
+      
+        h2 {
+            color: $success;
+            font-family: Italiana, serif;
+            font-weight: 600;
+            padding-top: 3rem;
+        }
+
+        img.divider {
+            width: 12vw;
+            padding-bottom: 4rem;
+            margin-top: -1rem;
+        }
+        
+        .row {
+            .card {
+                img {
+                    height: 225px;
+                    border-radius: 8px;
+                }
+
+                h3 {
+                    font-family: "Cantata One", serif;
+                    color: $primary;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    background-color: transparent;
+                    display: inline;
+
+                }
+
+                .icon-img {
+                    width: 24px;
+                    height: 24px;
+                    display: inline;
+                }
+
+                p {
+                    color: $dark;
+                    font-size: 0.95em;
+                    margin-top: 2rem;
+                }
+
+                span.text-dark {
+                    font-size: 1.3rem;
+                    color: $dark;
+                    font-weight: 600;
+                }
+            }
+      }
+    }
+  }
