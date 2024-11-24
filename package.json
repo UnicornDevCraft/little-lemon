@@ -1,10 +1,9 @@
 {
   "name": "little_lemon_project",
   "version": "1.0.0",
-  "description": "Making website for Little Lemon restaurant using Bootstrap. To submit as a Meta Front-end developer course simple project.",
+  "description": "Making website for Little Lemon restaurant using Bootstrap.",
   "scripts": {
-    "compile:sass": "sass --watch src/css/scss:src/css/css",
-    "build": "parcel build src/index.html"
+    "compile:sass": "sass --watch css/scss:css/css"
   },
   "keywords": [
     "little-lemon",
@@ -16,15 +15,17 @@
   "author": "UnicornDevCraft",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.13.0",
-    "@parcel/transformer-webmanifest": "^2.13.0",
-    "parcel": "^2.13.0",
-    "sass": "^1.80.5",
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
     "stylelint": "^16.10.0",
     "stylelint-config-standard-scss": "^13.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "flatpickr": "^4.6.13"
   }
 }

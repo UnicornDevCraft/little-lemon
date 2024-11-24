@@ -1,0 +1,17 @@
+@import '../custom';
+
+// Styling the footer
+.footer {
+    h5 {
+        color: $primary;
+
+    }
+
+    p {
+        color: $light;
+    }
+
+    ul li a {
+        color: $light !important;
+    }
+}

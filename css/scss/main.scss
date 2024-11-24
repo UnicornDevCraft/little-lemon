@@ -1,0 +1,19 @@
+@use 'custom';
+
+// Import the components
+@use 'components/animations';
+@use 'components/mixins';
+
+// Import the sections
+@use 'sections/navbar';
+@use 'sections/welcome';
+@use 'sections/intro';
+@use 'sections/about';
+@use 'sections/contact';
+@use 'sections/menu';
+@use 'sections/book';
+@use 'sections/footer';
+
+
+
+

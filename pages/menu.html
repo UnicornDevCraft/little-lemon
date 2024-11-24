@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu Little Lemon</title>
+
+    <!-- Linking favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Linking Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Cantata+One&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Linking main stylesheet -->
+    <link rel="stylesheet" href="../css/css/main.css">
+</head>
+<body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                 START THE NAVBAR SECTION  
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-light d-grid bg-light fixed-top">
+        <!-- Toggler for the left menu -->
+        <button class="navbar-toggler d-lg-none d-md-block d-none me-2 ms-4" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto order-lg-2" href="../index.html">
+            <img src="../img/logo_horizon_yell.png" alt="Logo">
+        </a>
+    
+        <!-- Toggler for combined offcanvas menu -->
+        <button class="navbar-toggler d-md-none ms-auto me-4" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-combined" aria-controls="offcanvas-combined">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Left Menu -->
+        <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbar-left">
+            <ul class="navbar-nav me-auto gap-3">
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Right Menu -->
+        <div class="collapse navbar-collapse d-none d-md-flex order-lg-3 pe-4" id="navbar-right">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Follow us:</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Offcanvas for Left Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-left-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvas-left-label">Little Lemon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Combined Offcanvas menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined" aria-labelledby="offcanvas-combined-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvas-combined-label">Little Lemon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV">Threads</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share">Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                   START OF THE MENU SECTION
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <main class="container-fluid bg-white mt-5 pt-5 pb-5">
+        <section class="menu text-center">
+            <div class="menu-header mb-2">
+                <h1 class="text-primary">Little Lemon Menu</h1>
+                <p class="text-secondary">A zesty selection of fresh flavors, crafted with love!</p>
+                <p>
+                    <a href="book.html" class="btn btn-primary my-2">Book Your Table</a>
+                    <a href="#menu-explore" class="btn btn-light my-2">Explore Menu</a>
+                </p>
+            </div>
+    
+            <dotlottie-player src="https://lottie.host/82e78dd9-e5fd-4775-9a97-f43d19c973a2/bM5R6gDMNc.json"
+                background="transparent" speed="0.2" style="width: 300px; height: 300px;" class="mx-auto" loop
+                autoplay></dotlottie-player>
+            <!-- Appetizers Section -->
+            <div id="menu-explore" class="album py-5 bg-body-tertiary">
+                <div class="container menu-section">
+                    <h2 class="text-success mt-5">Appetizers</h2>
+                    <img src="../img/divider.png" alt="leaf section divider" class="divider">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/lemon-bites.jpg" alt="pieces of lemon">
+                                <div class="card-body">
+                                    <h3 class="card-header">Crispy Lemon Bites</h3>
+                                    <p class="card-text text-dark">Golden-fried and bursting with lemon zest. Served with a
+                                        tangy dip.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€5.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/avocado-dream.jpg" alt="avocado toast with herbs">
+                                <div class="card-body">
+                                    <h3 class="card-header">Avocado Dream</h3>
+                                    <img src="../img/leaf.gif" alt="leaf" class="icon-img">
+                                    <p class="card-text text-dark">Creamy avocado on toasted sourdough with a sprinkle of
+                                        our secret herb blend.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€6.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/hummus.jpg" alt="a bowl of hummus with bread">
+                                <div class="card-body">
+                                    <h3 class="card-header">Sun-Kissed Hummus</h3>
+                                    <p class="card-text text-dark">Smooth chickpea hummus with a twist of lemon and paprika,
+                                        served with pita.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€4.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/bruschetta.jpg" alt="bruschettas on a plate">
+                                <div class="card-body">
+                                    <h3 class="card-header">Mini Bruschetta</h3>
+                                    <p class="card-text text-dark">Grilled sourdough topped with tomatoes, basil, and a hint
+                                        of lemon zest.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€5.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mains Section -->
+                    <h2 class="text-success mt-5">Mains</h2>
+                    <img src="../img/divider.png" alt="leaf section divider" class="divider">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/lemon-pasta.jpg" alt="lemon pasta">
+                                <div class="card-body">
+                                    <h3 class="card-header">Zesty Lemon Pasta</h3>
+                                    <p class="card-text text-dark">Fresh linguine tossed in a creamy lemon sauce with a hint
+                                        of garlic and parmesan.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€12.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/roasted-veggies.jpg" alt="roasted vegetables">
+                                <div class="card-body">
+                                    <h3 class="card-header">Garden Delight</h3>
+                                    <img src="../img/leaf.gif" alt="leaf" class="icon-img">
+                                    <p class="card-text text-dark">A mix of roasted veggies in a lemon-herb sauce over
+                                        couscous, packed with flavor.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€10.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/grilled-chicken.jpg" alt="grilled chicken with lemon">
+                                <div class="card-body">
+                                    <h3 class="card-header">Spicy Citrus Chicken</h3>
+                                    <p class="card-text text-dark">Grilled chicken in a spicy, citrus glaze with a side of
+                                        charred corn and lime rice.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€14.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/grilled-salmon.jpg" alt="grilled salmon with lemon">
+                                <div class="card-body">
+                                    <h3 class="card-header">Seaside Lemon Salmon</h3>
+                                    <p class="card-text text-dark">Grilled salmon with a lemon butter sauce, served with
+                                        roasted asparagus.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€15.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Desserts Section -->
+                    <h2 class="text-success mt-5">Desserts</h2>
+                    <img src="../img/divider.png" alt="leaf section divider" class="divider">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/lemon-cheesecake.jpg" alt="lemon cheesecake">
+                                <div class="card-body">
+                                    <h3 class="card-header">Lemon Drop Cheesecake</h3>
+                                    <p class="card-text text-dark">A creamy cheesecake with a zing of lemon, topped with
+                                        a sweet lemon glaze.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€6.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/lemon-sorbet.jpg" alt="citrus sorbet">
+                                <div class="card-body">
+                                    <h3 class="card-header">Citrus Sorbet</h3>
+                                    <img src="../img/leaf.gif" alt="leaf" class="icon-img">
+                                    <p class="card-text text-dark">A refreshing mix of lemon and orange sorbet, perfect
+                                        for a light finish.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€5.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/fondue.jpg" alt="chocolate citrus fondue">
+                                <div class="card-body">
+                                    <h3 class="card-header">Chocolate Citrus Fondue</h3>
+                                    <p class="card-text text-dark">A warm dark chocolate dip with lemon-tinged
+                                        marshmallows and fruits.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€7.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="../img/lemon-tart.jpg" alt="a piece of lemon tart">
+                                <div class="card-body">
+                                    <h3 class="card-header">Lemon Tart</h3>
+                                    <img src="../img/leaf.gif" alt="leaf" class="icon-img">
+                                    <p class="card-text text-dark">Tart and creamy with a vegan crust, served with
+                                        coconut cream.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <span class="text-dark">€6.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                   START OF THE FOOTER
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="container-fluid bg-secondary px-5 mt-5">
+        <footer class="py-5 footer">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Main</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="menu.html" class="nav-link p-0 text-body-secondary">Menu</a></li>
+                <li class="nav-item mb-2"><a href="../index.html#about-us" class="nav-link p-0 text-body-secondary">About</a></li>
+                <li class="nav-item mb-2"><a href="book.html" class="nav-link p-0 text-body-secondary">Book</a></li>
+                <li class="nav-item mb-2"><a href="../index.html#contact-us" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Follow us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV" class="nav-link p-0 text-body-secondary">Threads</a></li>
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/groups/4516214278604645/?ref=share" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Terms and Policies</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" onclick="alert('Privacy Policy will be available soon')" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+                <li class="nav-item mb-2"><a href="#" onclick="alert('Terms and Conditions will be available soon')" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" onclick="alert('FAQs will be available soon')" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Little Lemon, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+</body>
+</html>

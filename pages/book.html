@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Little Lemon</title>
+
+    <!-- Linking favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Linking Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Cantata+One&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Linking main stylesheet -->
+    <link rel="stylesheet" href="../css/css/main.css">
+
+</head>
+<body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                 START THE NAVBAR SECTION  
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-light d-grid bg-light fixed-top">
+        <!-- Toggler for the left menu -->
+        <button class="navbar-toggler d-lg-none d-md-block d-none me-2 ms-4" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto order-lg-2" href="../index.html">
+            <img src="../img/logo_horizon_yell.png" alt="Logo">
+        </a>
+    
+        <!-- Toggler for combined offcanvas menu -->
+        <button class="navbar-toggler d-md-none ms-auto me-4" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-combined" aria-controls="offcanvas-combined">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Left Menu -->
+        <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbar-left">
+            <ul class="navbar-nav me-auto gap-3">
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Right Menu -->
+        <div class="collapse navbar-collapse d-none d-md-flex order-lg-3 pe-4" id="navbar-right">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Follow us:</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Offcanvas for Left Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-left-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvas-left-label">Little Lemon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Combined Offcanvas menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined" aria-labelledby="offcanvas-combined-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvas-combined-label">Little Lemon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact-us">Contact</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV">Threads</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share">Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                START OF THE BOOKING SECTION
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <main>
+        <div class="container text-start book my-5">
+            <div class="row my-5">
+                <div class="col-12">
+                    <h1 class="text-uppercase">Request a reservation</h1>
+                    <p>Please share some details to make your request</p>
+                </div>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="party-size" class="form-label">Party size</label>
+                        <select id="party-size" class="form-select mb-3" aria-label="choose number of guests">
+                            <option value="1">1 guest</option>
+                            <option value="2" selected>2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="datePicker" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="datePicker" aria-label="choose a date">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="location" class="form-label">Location</label>
+                        <select id="location" class="form-select mb-3" aria-label="choose location of the table">
+                            <option value="1">In the corner</option>
+                            <option value="2" selected>Near the window</option>
+                            <option value="3">Outside</option>
+                            <option value="4">In the garden</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Choose an available time slot:</p>
+                    </div>
+                </div>
+                <div class="row time-slots">
+                    <div class="col-2">
+                        <button class="time-slot" data-time="09:00">09:00 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                    </div>
+                    <div class="col-2">
+                        <button class="time-slot" data-time="09:00">09:00 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                    </div>
+                    <div class="col-2">
+                        <button class="time-slot" data-time="09:00">09:00 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                    </div>
+                    <div class="col-2">
+                        <button class="time-slot" data-time="09:00">09:00 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                    </div>
+                    <div class="col-2">
+                        <button class="time-slot" data-time="09:00">09:00 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                        <button class="time-slot" data-time="09:15">09:15 AM</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary rounded-pill py-3 text-uppercase submit-reservation-form">
+                            Reserve now
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                   START OF THE FOOTER
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="container-fluid bg-secondary px-5 mt-5">
+        <footer class="py-5 footer">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Main</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="menu.html" class="nav-link p-0 text-body-secondary">Menu</a></li>
+                <li class="nav-item mb-2"><a href="../index.html#about-us" class="nav-link p-0 text-body-secondary">About</a></li>
+                <li class="nav-item mb-2"><a href="book.html" class="nav-link p-0 text-body-secondary">Book</a></li>
+                <li class="nav-item mb-2"><a href="../index.html#contact-us" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Follow us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV" class="nav-link p-0 text-body-secondary">Threads</a></li>
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/groups/4516214278604645/?ref=share" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Terms and Policies</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" onclick="alert('Privacy Policy will be available soon')" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+                <li class="nav-item mb-2"><a href="#" onclick="alert('Terms and Conditions will be available soon')" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" onclick="alert('FAQs will be available soon')" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Little Lemon, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <!-- Adding bootstrap JavaScript-->
+    <script src="../js/bootstrap/bootstrap.bundle.js"></script>
+    <script type="module" src="../js/book.js"></script>
+</body>
+</html>

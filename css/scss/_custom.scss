@@ -1,0 +1,30 @@
+/* stylelint-disable scss/load-partial-extension */
+
+// Custom color variables
+$light-red: #f84e5f;
+$red: #f84e5f;
+$light-yellow: #fae17c;
+$yellow: #ffc107;
+$gold: #f4ce14;
+$feldgrau: #495D58;
+$midnight-green: #095256;
+$keppel: #58b09c;
+$nyanza: #caf7e2;
+$white: #fff;
+
+// Custom theme color variables
+$primary: $gold;
+$success: $keppel;
+$info: $white;
+$warning: $yellow;
+$secondary: $feldgrau;
+$danger: $red;
+$light: $nyanza;
+$dark: $midnight-green;
+
+
+// Import the rest of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import Bootstrap icons
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
