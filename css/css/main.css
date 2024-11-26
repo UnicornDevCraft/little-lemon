@@ -141008,13 +141008,29 @@ textarea.form-control-lg {
   padding-top: 3rem;
 }
 .menu .menu-section img.divider {
-  width: 12vw;
+  width: 45%;
   padding-bottom: 4rem;
   margin-top: -1rem;
 }
+@media (min-width: 576px) {
+  .menu .menu-section img.divider {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .menu .menu-section img.divider {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .menu .menu-section img.divider {
+    width: 15%;
+  }
+}
 .menu .menu-section .row .card img {
   height: 225px;
-  border-radius: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .menu .menu-section .row .card h3, .menu .menu-section .row .card .h3 {
   font-family: "Cantata One", serif;
@@ -141038,6 +141054,13 @@ textarea.form-control-lg {
   font-size: 1.3rem;
   color: #095256;
   font-weight: 600;
+}
+
+.modal-header #dish-name {
+  color: #f4ce14;
+}
+.modal-header #dish-name .btn-close {
+  margin-left: 1rem;
 }
 
 /* stylelint-disable scss/load-partial-extension */
