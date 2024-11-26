@@ -14,4 +14,9 @@
     ul li a {
         color: $light !important;
     }
+
+    .disabled-button {
+        cursor: not-allowed;
+        opacity: 0.6;    
+    }
 }

@@ -285,7 +285,7 @@
                                 <textarea name="message" placeholder="Feel free to tell me.." id="message" rows="8" class="form-control"></textarea>
                               </div>
                               <div class="text-center d-grid mt-1">
-                                <button id="submit-form" type="submit" class="btn btn-primary rounded-pill py-3 submit-contact-form disabled-button">
+                                <button id="submit-form" type="submit" class="btn btn-primary rounded-pill py-3 submit-contact-form">
                                     Submit
                                     <i class="bi bi-send"></i>
                                 </button>
@@ -349,14 +349,15 @@
             </div>
       
             <div class="col-md-5 offset-md-1 mb-3">
-              <form>
+              <form action="#" id="subscribe-form" autocomplete="on">
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribe</button>
+                  <label for="subscribe" class="visually-hidden">Email address</label>
+                  <input id="subscribe" type="text" class="form-control" placeholder="Email address" required>
+                  <button class="btn btn-primary" type="submit" id="subscribe-btn">Subscribe</button>
                 </div>
+                <div class="feedback pt-2" id="subscribe-feedback" aria-live="polite"></div>
               </form>
             </div>
           </div>
