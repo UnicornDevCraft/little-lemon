@@ -7,13 +7,13 @@ I'm currently studying the Meta Front-End Developer course, and one of the proje
 
 ## About the Project
 
-After completing the webpage using only HTML and CSS, I still felt that it looked like a page from my childhood. You can still find this version in the `pure` folder. Later, I discovered a design template at [Wix](https://www.wix.com/website-template/view/html/3301) that looked appealing. So, I reimplemented it using Bootstrap with customized Sass files. The fonts might be a bit off, but I think it looks much better! 
+After completing the webpage using only HTML and CSS, I still felt that it looked like a page from my childhood. You can still find this version in the [pure-little-lemon](https://github.com/UnicornDevCraft/pure-little-lemon) repository. Later, I discovered a design template at [Wix](https://www.wix.com/website-template/view/html/3301) that looked appealing. So, I reimplemented it using Bootstrap with customized Sass files. The fonts might be a bit off, but I think it looks much better! 
 
 This project is a simple website for the Little Lemon restaurant.
 
 ## Demo
 
-Provide a screenshot or link to the live site here if available.
+[Little Lemon Restaurant](https://unicorndevcraft.github.io/little-lemon/)
 
 ## Technologies Used
 
@@ -21,11 +21,6 @@ Provide a screenshot or link to the live site here if available.
 - CSS
 - Sass (for custom styling)
 - Bootstrap
-
-## Folder Structure
-
-- `pure/`: Original version using only HTML and CSS.
-- `bootstrap/`: Enhanced version with Bootstrap and Sass customization.
 
 ## Feedback
 
