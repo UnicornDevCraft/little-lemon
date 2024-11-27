@@ -40141,70 +40141,87 @@ textarea.form-control-lg {
   content: "賈";
 }
 
-.navbar {
+html {
+  scroll-behavior: smooth;
+}
+html section#about-us {
+  scroll-margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  html section#about-us {
+    scroll-margin-top: 6rem;
+  }
+}
+@media (min-width: 992px) {
+  html section#about-us {
+    scroll-margin-top: 12rem;
+  }
+}
+html .navbar {
   grid-template-columns: repeat(3, 1fr);
 }
-.navbar .navbar-brand img {
+html .navbar .navbar-brand img {
   height: 48px;
 }
-.navbar .navbar-nav .nav-link {
+html .navbar .navbar-nav .nav-link {
   padding: 8px 12px;
   color: #495D58;
   font-family: Lora, serif;
 }
-.navbar .navbar-nav .nav-link i {
+html .navbar .navbar-nav .nav-link i {
   font-size: large;
   color: #58b09c;
 }
-.navbar .navbar-nav .nav-link i:hover {
+html .navbar .navbar-nav .nav-link i:hover {
   color: #f4ce14;
 }
-.navbar .navbar-nav .nav-link:hover {
+html .navbar .navbar-nav .nav-link:hover {
   color: #f4ce14;
   text-shadow: 1px 1px 5px #fae17c;
 }
-.navbar #navbar-right {
+html .navbar #navbar-right {
   justify-self: end;
 }
 @media (min-width: 992px) {
-  .navbar #navbar-right {
+  html .navbar #navbar-right {
     margin-right: 3rem;
   }
 }
-.navbar #navbar-right ul {
+html .navbar #navbar-right ul {
   display: flex;
   flex-flow: row nowrap;
 }
-.navbar #navbar-left {
+html .navbar #navbar-left {
   justify-self: start;
 }
 @media (min-width: 992px) {
-  .navbar #navbar-left {
+  html .navbar #navbar-left {
     margin-left: 3rem;
   }
 }
-.navbar .navbar-toggler.d-md-block {
+html .navbar .navbar-toggler.d-md-block {
   max-width: 22%;
 }
 @media (max-width: 767.98px) {
-  .navbar {
+  html .navbar {
     grid-template-columns: repeat(2, 1fr);
   }
-  .navbar .navbar-brand {
+  html .navbar .navbar-brand {
     justify-self: start;
   }
 }
-
-.offcanvas-title {
+html .offcanvas-title {
   font-family: "Bigshot One", sans-serif;
   color: #f4ce14;
 }
-
-.offcanvas-body .navbar-nav .nav-item .nav-link {
+html .offcanvas-title a {
+  text-decoration: none !important;
+}
+html .offcanvas-body .navbar-nav .nav-item .nav-link {
   color: #495D58;
   font-family: "Cantata One", sans-serif;
 }
-.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+html .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
   color: #f4ce14;
   text-shadow: 1px 1px 5px #fae17c;
 }
@@ -100593,7 +100610,6 @@ textarea.form-control-lg {
 
 .about-us {
   margin: 2rem auto;
-  min-height: 80vh;
 }
 @media (min-width: 768px) {
   .about-us {
@@ -161135,7 +161151,43 @@ textarea.form-control-lg {
 }
 
 .book {
-  padding: 2rem;
+  padding: 1.5rem;
+}
+.book h1, .book .h1 {
+  font-size: 5rem;
+  font-family: "Bigshot One", sans-serif;
+  color: #f4ce14;
+}
+.book p {
+  font-weight: 600;
+  color: #095256;
+  font-size: 1rem;
+  font-family: Lora, serif;
+  margin-top: -0.5rem;
+}
+.book p.choose {
+  font-weight: 400;
+}
+.book .form-label {
+  font-family: Lora, serif;
+  color: #095256;
+}
+.book select, .book input {
+  border: none;
+}
+.book .time-section {
+  margin-top: 4rem;
+}
+.book .time-slots .col {
+  margin-top: 0.5rem;
+}
+.book .time-slot {
+  width: 100%;
+}
+.book .submit-reservation-form {
+  margin-top: 2.5rem;
+  font-size: medium;
+  font-family: "Bigshot One", sans-serif;
 }
 
 /* stylelint-disable scss/load-partial-extension */

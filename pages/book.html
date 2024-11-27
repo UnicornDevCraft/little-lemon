@@ -19,6 +19,7 @@
 
     <!-- Linking main stylesheet -->
     <link rel="stylesheet" href="../css/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.0/air-datepicker.css">
 
 </head>
 <body>
@@ -53,7 +54,7 @@
                     <a class="nav-link" href="../index.html#about-us">About</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" href="book.html">Book</a>
+                    <a class="nav-link on-page" href="book.html">Book</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html#contact-us">Contact</a>
@@ -83,7 +84,7 @@
     <!-- Offcanvas for Left Menu -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-left-label">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvas-left-label">Little Lemon</h5>
+            <h5 class="offcanvas-title" id="offcanvas-left-label"><a href="../index.html">Little Lemon</a></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
         </div>
         <div class="offcanvas-body">
@@ -107,7 +108,7 @@
     <!-- Combined Offcanvas menu -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined" aria-labelledby="offcanvas-combined-label">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvas-combined-label">Little Lemon</h5>
+            <h5 class="offcanvas-title" id="offcanvas-combined-label"><a href="../index.html">Little Lemon</a></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
         </div>
         <div class="offcanvas-body">
@@ -151,8 +152,8 @@
                     <p>Please share some details to make your request</p>
                 </div>
             </div>
-            <form action="#">
-                <div class="row">
+            <form action="#" class="pt-4 mb-5">
+                <div class="row mb-5">
                     <div class="col-md-4">
                         <label for="party-size" class="form-label">Party size</label>
                         <select id="party-size" class="form-select mb-3" aria-label="choose number of guests">
@@ -165,8 +166,8 @@
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label for="datePicker" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="datePicker" aria-label="choose a date">
+                        <label for="datepicker" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="datepicker" aria-label="choose a date">
                     </div>
                     <div class="col-md-4">
                         <label for="location" class="form-label">Location</label>
@@ -178,41 +179,32 @@
                         </select>
                     </div>
                 </div>
-                <div class="row">
+                <hr>
+                <div class="row time-section">
                     <div class="col">
-                        <p>Choose an available time slot:</p>
+                        <p class="choose">Choose an available time slot:</p>
                     </div>
                 </div>
-                <div class="row time-slots">
-                    <div class="col-2">
-                        <button class="time-slot" data-time="09:00">09:00 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                    </div>
-                    <div class="col-2">
-                        <button class="time-slot" data-time="09:00">09:00 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                    </div>
-                    <div class="col-2">
-                        <button class="time-slot" data-time="09:00">09:00 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                    </div>
-                    <div class="col-2">
-                        <button class="time-slot" data-time="09:00">09:00 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                    </div>
-                    <div class="col-2">
-                        <button class="time-slot" data-time="09:00">09:00 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                        <button class="time-slot" data-time="09:15">09:15 AM</button>
-                    </div>
+                <div class="row row-cols-3 row-cols-md-5 g-2 time-slots">
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">10:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">10:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">11:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">11:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">12:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">12:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">13:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">13:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">14:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">14:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">15:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">15:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">16:00 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">16:30 AM</button></div>
+                        <div class="col"><button class="time-slot btn btn-secondary rounded-5" data-time="09:00">17:00 AM</button></div>
                 </div>
-                <div class="row">
+                <div class="row text-center">
                     <div class="col">
-                        <button type="submit" class="btn btn-primary rounded-pill py-3 text-uppercase submit-reservation-form">
+                        <button type="submit" class="btn btn-primary rounded-pill text-uppercase submit-reservation-form">
                             Reserve now
                         </button>
                     </div>
@@ -280,10 +272,9 @@
           </div>
         </footer>
       </div>
-
-    <script type="module" src="../js/book.js"></script>
-    <script type="module" src="../js/footer.js"></script>
     <script src="../js/bootstrap/bootstrap.bundle.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.0/air-datepicker.js"></script>
+    <script src="../js/book.js"></script>
+    <script type="module" src="../js/footer.js"></script>
 </body>
 </html>

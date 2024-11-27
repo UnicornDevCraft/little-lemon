@@ -1,16 +1,11 @@
-
-
-// Importing Flatpickr
-import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
-
-
-flatpickr('#datePicker', {
-    dateFormat: 'Y-m-d',
-    altInput: true,
-    altFormat: 'F j, Y',
-    defaultDate: new Date(),
-    minDate: 'today',
-    maxDate: "2024-12-31",
-    disable: ["2024-12-25", "2024-12-31"],
-});
+document.addEventListener("DOMContentLoaded", () => {
+    new AirDatepicker('#datepicker', {
+      autoClose: true,
+      dateFormat: 'dd/MM/yyyy',
+    selectedDates: [new Date()],
+    minDate: new Date(),
+    maxDate: new Date(2024, 11, 31),
+    disableDates: [new Date(2024, 11, 25), new Date(2024, 11, 31)],
+      isMobile: true,
+    });
+  });

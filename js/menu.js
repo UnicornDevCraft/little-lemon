@@ -1,16 +1,21 @@
 // Lightbox for showing off the dishes
-// Get all gallery images and the modal image element
-const galleryImages = document.querySelectorAll('.gallery-image');
+const galleryItems = document.querySelectorAll('.gallery-image, .view');
 const lightboxImage = document.querySelector('#lightboxImage');
 const imageHeader = document.querySelector('#dish-name');
 
-// Add event listeners to each image in the gallery
-galleryImages.forEach(image => {
-    let dishName = image.closest('.card').querySelector('.card-header');
-    image.addEventListener('click', () => {
-        
-        // Set the src of the lightbox image to the clicked image's src
-        lightboxImage.src = image.src;
-        imageHeader.innerHTML = dishName.textContent;
-    });
+// Function to set up the lightbox
+const showLightbox = (element) => {
+    const card = element.closest('.card');
+    console.log(element.closest('.card'))
+    const dishName = card.querySelector('.card-header').textContent;
+    const imageSrc = card.querySelector('.gallery-image').src;
+    
+    lightboxImage.src = imageSrc;
+    imageHeader.innerHTML = dishName;
+};
+
+// Add event listeners to all gallery items
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => showLightbox(item));
 });
+

@@ -1,6 +1,20 @@
 // Importing custom colors
 @import '../custom';
 
+html {
+    scroll-behavior: smooth;
+
+    section#about-us {
+        scroll-margin-top: 4rem;
+
+        @include media-breakpoint-up(md) {
+            scroll-margin-top: 6rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            scroll-margin-top: 12rem;
+        }
+    }
 
 // Styling navbar
 .navbar {
@@ -71,6 +85,10 @@
 .offcanvas-title {
     font-family: 'Bigshot One', sans-serif;
     color: $primary;
+
+    a {
+        text-decoration: none !important;
+    }
 }
 
 // Adding custom style and effects to links within offcanvas menu
@@ -83,5 +101,6 @@
             color: $primary;
             text-shadow: 1px 1px 5px $light-yellow;
         }
+    }
     }
 }

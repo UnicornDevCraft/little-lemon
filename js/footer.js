@@ -52,4 +52,58 @@ document.addEventListener("DOMContentLoaded", () => {
         subscribeButton.disabled = false;
     }, 1000);
     });
+
+    // Adding style to the section of the webpage when clicked
+    const sectionPages = document.querySelectorAll('.section');
+
+    sectionPages.forEach(section => {
+        section.addEventListener('click', () => {
+            // Remove active class from all tabs
+            sectionPages.forEach(section => section.classList.remove('text-primary', 'text-uppercase'));
+            // Add active class to the clicked tab
+            section.classList.add('text-primary', 'text-uppercase');
+        });
+    });
+
+    // Adding tyle when scrolled to the section
+    const sections = document.querySelectorAll('section');
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Get the ID of the visible section
+                    const sectionId = entry.target.id;
+
+                    // Remove 'active' class from all tabs
+                    sectionPages.forEach(section => section.classList.remove('text-primary', 'text-uppercase'));
+
+                    // Add 'active' class to the tab linked to the visible section
+                    const activeTab = document.querySelector(`.nav-link[href="index.html#${sectionId}"]`);
+                    if (activeTab) {
+                        activeTab.classList.add('text-primary', 'text-uppercase');
+                    }
+                }
+            });
+        },
+        { threshold: 0.1 } // Trigger when 50% of the section is visible
+    );
+
+    // Observe each section
+    sections.forEach(section => observer.observe(section));
+
+    // Adding styling to an active tab in the navbar
+    const onPage = document.querySelector('.on-page');
+    if (onPage) {
+        onPage.classList.add('text-primary', 'text-uppercase');
+    }
+
+    // Adding offcanvas closing
+    const navLinks = document.querySelectorAll('.offcanvas .nav-link'); // All links inside offcanvas menus
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const offcanvasMenu = bootstrap.Offcanvas.getInstance(link.closest('.offcanvas'));
+                    if (offcanvasMenu) offcanvasMenu.hide();
+        });
+    });
 });
