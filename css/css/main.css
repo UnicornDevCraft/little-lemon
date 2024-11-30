@@ -60323,7 +60323,7 @@ textarea.form-control-lg {
   }
 }
 .welcome-section .welcome-image .lemon-hi {
-  margin-top: -4rem;
+  margin-top: -2rem;
   padding: 0 0 2rem;
 }
 @media (min-width: 768px) {
@@ -100622,13 +100622,23 @@ textarea.form-control-lg {
   }
 }
 .about-us .story {
-  margin-left: 3.5rem;
+  margin-left: 1rem;
+}
+@media (min-width: 768px) {
+  .about-us .story {
+    margin-left: 3.5rem;
+  }
 }
 .about-us .story h2, .about-us .story .h2 {
   margin-bottom: 2rem;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: Italiana, sans-serif;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .about-us .story h2, .about-us .story .h2 {
+    font-size: 5rem;
+  }
 }
 .about-us .story p {
   font-family: Lora, sans-serif;
@@ -100665,14 +100675,9 @@ textarea.form-control-lg {
   }
 }
 .about-us .cards .card {
-  width: 80%;
+  width: 90%;
   border-radius: 45px;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .about-us .cards .card {
-    width: 90%;
-  }
 }
 @media (min-width: 992px) {
   .about-us .cards .card {
@@ -100680,13 +100685,13 @@ textarea.form-control-lg {
   }
 }
 .about-us .cards .card img {
-  width: 80% !important;
+  width: 85% !important;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
-  margin: 2.5rem auto 0.5rem;
+  margin: 1.5rem auto 0.5rem;
 }
 .about-us .cards .card .card-body {
-  margin: 1rem 1.5rem;
+  margin: 1rem;
 }
 .about-us .cards .card .card-body .card-title {
   margin-bottom: 1rem;
@@ -120777,16 +120782,26 @@ textarea.form-control-lg {
   margin: 3rem auto 0;
 }
 .contact-us h2, .contact-us .h2 {
-  margin: 16rem 0 0 2rem;
+  margin: 6rem 0 0 1rem;
   font-size: 3rem;
   font-family: Italiana, sans-serif;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .contact-us h2, .contact-us .h2 {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us h2, .contact-us .h2 {
+    margin-top: 16rem;
+  }
 }
 .contact-us .form-container {
   z-index: 1000;
   width: 90%;
   margin: 2rem 0 0.5rem;
-  padding: 7rem 0;
+  padding: 5rem 0 2rem;
   border-top-right-radius: 45px;
 }
 @media (min-width: 576px) {
@@ -120797,11 +120812,18 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .contact-us .form-container {
     width: 60%;
+    padding: 7rem 0;
   }
 }
 .contact-us .form-container .form {
-  width: 70%;
-  margin-left: 4rem;
+  width: 85%;
+  margin-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .contact-us .form-container .form {
+    width: 70%;
+    margin-left: 4rem;
+  }
 }
 .contact-us .form-container .form .form-label {
   font-size: 1.2rem;
@@ -120829,7 +120851,7 @@ textarea.form-control-lg {
 }
 .contact-us .info {
   font-family: Lora, sans-serif;
-  width: 90%;
+  width: 80%;
   border-radius: 45px;
   margin: 0 auto 1rem;
   padding-bottom: 2rem;
@@ -120850,7 +120872,7 @@ textarea.form-control-lg {
 }
 .contact-us .info address {
   color: #495D58;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin: 2rem 0 2rem 2rem;
 }
@@ -120863,7 +120885,6 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .contact-us .info address {
     margin: 4rem 0 3rem 1.5rem;
-    font-size: 1.2rem;
     line-height: 1.4;
   }
 }
@@ -120879,7 +120900,7 @@ textarea.form-control-lg {
 }
 .contact-us .info a {
   color: #495D58;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   margin-left: 2rem;
   text-decoration: none;
@@ -120892,7 +120913,6 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .contact-us .info a {
     margin-left: 1.5rem;
-    font-size: 1.2rem;
     line-height: 1.4;
   }
 }
@@ -120906,9 +120926,15 @@ textarea.form-control-lg {
     margin-left: 5rem;
   }
 }
-.contact-us .image {
-  width: 80%;
-  justify-self: center;
+@media (min-width: 768px) {
+  .contact-us .image {
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us .image {
+    width: 80%;
+  }
 }
 .contact-us .image img {
   width: 100%;

@@ -14,13 +14,22 @@
     }
 
     .story {
-        margin-left: 3.5rem;
+        margin-left: 1rem;
+
+        @include media-breakpoint-up(md){
+            margin-left: 3.5rem;
+        }
 
         h2 {
             margin-bottom: 2rem;
-            font-size: 5rem;
+            font-size: 4rem;
             font-family: Italiana, sans-serif;
             font-weight: 600;
+
+            @include media-breakpoint-up(md){
+                font-size: 5rem; 
+            }
+
         }
     
         p {
@@ -58,27 +67,23 @@
         }
 
         .card {
-            width: 80%;
+            width: 90%;
             border-radius: 45px;
             margin: 0 auto;
-            
-            @include media-breakpoint-up(md) {
-                width: 90%;
-            }
     
             @include media-breakpoint-up(lg) {
                 width: 100%;
             }
             
             img {
-                width: 80% !important;
+                width: 85% !important;
                 border-top-left-radius: 45px;
                 border-top-right-radius: 45px;
-                margin: 2.5rem auto 0.5rem;
+                margin: 1.5rem auto 0.5rem;
             }
 
             .card-body {
-                margin: 1rem 1.5rem;
+                margin: 1rem;
         
                 .card-title {
                     margin-bottom: 1rem;
