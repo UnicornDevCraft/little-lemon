@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -66,7 +66,7 @@
         <div class="collapse navbar-collapse d-none d-md-flex order-lg-3 pe-4" id="navbar-right">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Follow us:</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a>
@@ -152,11 +152,11 @@
                     <p>Please share some details to make your request</p>
                 </div>
             </div>
-            <form action="#" class="pt-4 mb-5">
+            <form action="#" class="pt-4 mb-5 mx-2">
                 <div class="row mb-5">
                     <div class="col-md-4">
                         <label for="party-size" class="form-label">Party size</label>
-                        <select id="party-size" class="form-select mb-3" aria-label="choose number of guests">
+                        <select id="party-size" class="form-select mb-3 text-dark" aria-label="choose number of guests">
                             <option value="1">1 guest</option>
                             <option value="2" selected>2 guests</option>
                             <option value="3">3 guests</option>
@@ -167,11 +167,11 @@
                     </div>
                     <div class="col-md-4">
                         <label for="datepicker" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="datepicker" aria-label="choose a date">
+                        <input type="text" class="form-control text-dark" id="datepicker" aria-label="choose a date">
                     </div>
                     <div class="col-md-4">
                         <label for="location" class="form-label">Location</label>
-                        <select id="location" class="form-select mb-3" aria-label="choose location of the table">
+                        <select id="location" class="form-select text-dark mb-3" aria-label="choose location of the table">
                             <option value="1">In the corner</option>
                             <option value="2" selected>Near the window</option>
                             <option value="3">Outside</option>
@@ -204,12 +204,31 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <button type="submit" class="btn btn-primary rounded-pill text-uppercase submit-reservation-form">
+                        <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-primary rounded-pill text-uppercase submit-reservation-form" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Reserve now
                         </button>
                     </div>
                 </div>
             </form>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center text-dark">
+                    <h2 class="fs-5 res-info">Online reservations are currently unavailable</h2>
+                    <p class="res-add-info">To make a reservation, contact us directly by phone.</p>
+                    <a class="res-add-info" href="tel:0-800-200-900">0-800-200-900</a>
+                </div>
+                <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
         </div>
     </main>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////

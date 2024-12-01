@@ -161180,9 +161180,14 @@ textarea.form-control-lg {
   padding: 1.5rem;
 }
 .book h1, .book .h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Bigshot One", sans-serif;
   color: #f4ce14;
+}
+@media (min-width: 768px) {
+  .book h1, .book .h1 {
+    font-size: 5rem;
+  }
 }
 .book p {
   font-weight: 600;
@@ -161210,10 +161215,29 @@ textarea.form-control-lg {
 .book .time-slot {
   width: 100%;
 }
+.book .time-slot:hover {
+  background-color: #f4ce14;
+  color: #495D58;
+}
 .book .submit-reservation-form {
+  width: 12rem;
   margin-top: 2.5rem;
   font-size: medium;
-  font-family: "Bigshot One", sans-serif;
+  font-family: Italiana, sans-serif;
+  font-weight: 700;
+}
+
+.modal-content .modal-body {
+  margin-top: 4rem;
+}
+.modal-content .modal-body .res-info {
+  font-family: Italiana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.modal-content .modal-body .res-add-info {
+  font-family: Lora, serif;
+  margin-top: 1rem;
 }
 
 /* stylelint-disable scss/load-partial-extension */
