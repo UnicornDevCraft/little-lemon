@@ -1,0 +1,101 @@
+// Importing custom colors
+@import '../custom';
+  
+// Styling the navbar
+.blog-header {
+    .blog-header-logo img{
+        height: 48px;
+    }
+
+    .nav-scroller {
+        font-family: 'Cantata One', sans-serif;
+    }
+}
+
+.blog-content {
+    .featured-post {
+        background-image: url('../../../img/sunshine2.png');
+        margin-bottom: 4rem;
+        padding: 7rem 2rem 7rem 4rem;
+    }
+
+    .lead {
+        background-color: rgba(9, 82, 86, 0.5);
+    }
+
+    h1 {
+        font-family: Italiana, serif;
+        font-weight: 700;
+        color: white;
+    }
+
+    p {
+        font-family: Lora, serif;
+    }
+
+    h3 {
+        font-family: 'Cantata One', sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: $secondary;
+    }
+
+    h2 {
+        font-family: Italiana, serif;
+        font-weight: 700;
+        color: $secondary;
+    }
+
+    .short-posts {
+        h3 {
+            font-family: 'Cantata One', sans-serif;
+        }
+
+        p {
+            font-family: Lora, serif;
+        }
+    }
+
+    .thumbnail {
+        img {
+            width: 100%;
+        }
+    }
+
+    .blog-post {
+        margin-bottom: 4rem;
+        
+        p {
+            color: $dark;
+        }
+
+        li {
+            color: $secondary;
+
+            p {
+                display: inline;
+            }
+        }
+    }
+}
+
+.h-250 { 
+    height: 250px; 
+
+    @include media-breakpoint-up(md) {
+        height: 250px;
+    }
+}
+
+
+
+/* Pagination */
+.blog-pagination {
+margin-bottom: 4rem;
+}
+
+
+.blog-post-meta {
+margin-bottom: 1.25rem;
+color: #727272;
+}
