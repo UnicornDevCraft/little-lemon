@@ -1,7 +1,7 @@
 // Importing custom colors
 @import '../custom';
 
-// Styling book section
+// Styling the book section
 .book {
     padding: 1.5rem;
 
@@ -66,8 +66,8 @@
 }
 
 .modal-content {
-    .modal-body {
-        margin-top: 4rem;
+    .message-body {
+        margin: 4rem 0;
 
         .res-info {
             font-family: Italiana, sans-serif;

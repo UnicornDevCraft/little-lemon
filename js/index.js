@@ -1,48 +1,47 @@
 // Updates submit button state
 export function updateSubmitButtonState(hasStatus, forButton) {
-    const hasErrors = Object.values(hasStatus).some((status) => status !== 0);
-    forButton.disabled = hasErrors;
-    forButton.classList.toggle("disabled-button", hasErrors);
+  const hasErrors = Object.values(hasStatus).some((status) => status !== 0);
+  forButton.disabled = hasErrors;
+  forButton.classList.toggle("disabled-button", hasErrors);
 }
 
 // Validates email
 export function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let error = "";
-    if (email.length < 1) {
-      error = "An email address is required to continue.";
-    } else if (!emailPattern.test(email)) {
-      error = "Please enter a valid email address (e.g., user@example.com).";
-    } else {
-      error = "Looks good!";
-    }
-    return error;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let error = "";
+  if (email.length < 1) {
+    error = "An email address is required to continue.";
+  } else if (!emailPattern.test(email)) {
+    error = "Please enter a valid email address (e.g., user@example.com).";
+  } else {
+    error = "Looks good!";
+  }
+  return error;
 }
 
 // Validates name inputs
 function validateName(name, type) {
-    const namePattern = /^[A-Za-z-]+$/;
-    let typeCapitalized = type.charAt(0).toUpperCase() + type.slice(1);
-    let error = "";
+  const namePattern = /^[A-Za-z-]+$/;
+  let typeCapitalized = type.charAt(0).toUpperCase() + type.slice(1);
+  let error = "";
 
-    if (name.length < 1) {
-      error = `Please enter your ${type} name to continue.`;
-    } else if (name.length < 2) {
-      error = `${typeCapitalized} name must have at least 2 characters.`;
-    } else if (name.length > 50) {
-      error = `${typeCapitalized} name must be less than 50 characters long.`;
-    } else if (!namePattern.test(name)) {
-      error = `Only letters and hyphens are allowed in the ${type} name.`;
-    } else {
-      error = "Looks good!";
-    }
-    return error;
+  if (name.length < 1) {
+    error = `Please enter your ${type} name to continue.`;
+  } else if (name.length < 2) {
+    error = `${typeCapitalized} name must have at least 2 characters.`;
+  } else if (name.length > 50) {
+    error = `${typeCapitalized} name must be less than 50 characters long.`;
+  } else if (!namePattern.test(name)) {
+    error = `Only letters and hyphens are allowed in the ${type} name.`;
+  } else {
+    error = "Looks good!";
+  }
+  return error;
 }
 console.log(`index.js loaded on ${document.location.pathname}`);
-if (window.location.pathname === '/index.html') {
+if (window.location.pathname === "/index.html") {
   // Form validation for contact and subscribe forms
   document.addEventListener("DOMContentLoaded", () => {
-    
     // Declaring variables for contact form validation
     const form = document.querySelector("#contact-form");
     const submitButton = document.querySelector("#submit-form");
@@ -61,7 +60,10 @@ if (window.location.pathname === '/index.html') {
         const fieldType = inputField.dataset.field;
 
         if (!inputField.value) {
-          feedback.innerHTML = `Please enter your ${fieldType.replace("-", " ")}`;
+          feedback.innerHTML = `Please enter your ${fieldType.replace(
+            "-",
+            " "
+          )}`;
           feedback.style.color = "white";
         }
       });
@@ -95,7 +97,7 @@ if (window.location.pathname === '/index.html') {
 
     // Submit form with a spinner
     form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Prevent actual submission for demo
+      event.preventDefault();
       if (submitButton.disabled) return;
 
       // Show spinner and simulate submission

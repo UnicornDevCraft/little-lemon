@@ -1,6 +1,7 @@
 // Importing custom colors
 @import '../custom';
 
+// Adding smooth scroll behavior
 html {
     scroll-behavior: smooth;
 
@@ -82,9 +83,13 @@ html {
 }
 
 // Styling for offcanvas menu
+.offcanvas-header {
+    border-bottom: 1px solid $primary;
+}
+
 .offcanvas-title {
     font-family: 'Bigshot One', sans-serif;
-    color: $primary;
+    color: $dark-yellow;
 
     a {
         text-decoration: none !important;
@@ -104,3 +109,30 @@ html {
     }
     }
 }
+
+.nav-link.on-tab {
+    position: relative;
+    color: $dark !important;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: $primary;
+      animation: underline 0.5s ease-in-out;
+    }
+  }
+  
+  @keyframes underline {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+  

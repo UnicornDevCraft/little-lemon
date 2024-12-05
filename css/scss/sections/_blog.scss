@@ -14,9 +14,16 @@
 
 .blog-content {
     .featured-post {
-        background-image: url('../../../img/sunshine2.png');
+        background-image: url('../../../img/sunshine.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         margin-bottom: 4rem;
         padding: 7rem 2rem 7rem 4rem;
+
+        @include media-breakpoint-up(lg) {
+            background-image: url('../../../img/sunshine2.png');
+        }
     }
 
     .lead {
@@ -47,6 +54,10 @@
     }
 
     .short-posts {
+        .short-post {
+            flex-wrap: wrap;
+        }
+
         h3 {
             font-family: 'Cantata One', sans-serif;
         }
@@ -71,31 +82,52 @@
 
         li {
             color: $secondary;
+            font-family: Lora, sans-serif;
+        }
 
-            p {
-                display: inline;
+        li strong {
+            font-family: Italiana, serif;
+        }
+    }
+
+    table {
+        font-family: Lora, sans-serif;
+
+        th {
+            color: $dark;
+        }
+
+        td {
+            color: $secondary;
+        }
+    }
+
+    .recent-posts {
+        .post-image {
+            width: 100%;
+            object-fit: cover;
+
+            @include media-breakpoint-up(md) {
+                width: 120px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
             }
+        }
+
+        .post-description {
+            color: $dark;
+            font-family: 'Cantata One', sans-serif;
         }
     }
 }
 
-.h-250 { 
-    height: 250px; 
-
-    @include media-breakpoint-up(md) {
-        height: 250px;
-    }
-}
-
-
-
-/* Pagination */
+// Pagination
 .blog-pagination {
 margin-bottom: 4rem;
 }
 
-
 .blog-post-meta {
 margin-bottom: 1.25rem;
-color: #727272;
+color: $light;
 }

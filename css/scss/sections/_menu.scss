@@ -1,14 +1,14 @@
 // Importing custom colors
 @import '../custom';
 
+// Styling the menu section
 .menu {
     .menu-header {
         padding-top: 6rem;
-        padding-bottom: 0;
+        padding-bottom: 4rem;
 
         h1 {
             font-family: "Bigshot One", sans-serif;
-            color: $primary;
         }
 
         p {
@@ -57,7 +57,7 @@
 
                 h3 {
                     font-family: "Cantata One", serif;
-                    color: $primary;
+                    color: $dark-yellow;
                     font-weight: bold;
                     font-size: 1.2rem;
                     background-color: transparent;
@@ -73,7 +73,8 @@
 
                 p {
                     color: $dark;
-                    font-size: 0.95em;
+                    font-family: Lora, sans-serif;
+                    font-size: 1.1rem;
                     margin-top: 2rem;
                 }
 
@@ -89,10 +90,10 @@
 
 .modal-header {
     #dish-name {
-        color: $primary;
+        color: $dark-yellow;
 
     .btn-close {
         margin-left: 1rem;
     }
-}
+  }
 }

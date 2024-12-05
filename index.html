@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +16,14 @@
     <!-- Linking Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Cantata+One&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Cantata+One&family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 
     <!-- Linking main stylesheet -->
     <link rel="stylesheet" href="css/css/main.css">
 </head>
+
 <body>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                  START THE NAVBAR SECTION  
@@ -27,21 +31,21 @@
     <nav class="navbar navbar-expand-lg navbar-light d-grid bg-light fixed-top">
         <!-- Toggler for the left menu -->
         <button class="navbar-toggler d-lg-none d-md-block d-none me-2 ms-4" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
+            data-bs-target="#offcanvas-left" aria-controls="offcanvas-left" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Logo -->
         <a class="navbar-brand mx-auto order-lg-2" href="index.html">
-            <img src="img/logo_horizon_yell.png" alt="Logo">
+            <img src="img/logo_horizon_yell.png" alt="Little Lemon logo">
         </a>
-    
+
         <!-- Toggler for combined offcanvas menu -->
         <button class="navbar-toggler d-md-none ms-auto me-4" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvas-combined" aria-controls="offcanvas-combined">
+            data-bs-target="#offcanvas-combined" aria-controls="offcanvas-combined" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Left Menu -->
         <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbar-left">
             <ul class="navbar-nav me-auto gap-3">
@@ -59,26 +63,29 @@
                 </li>
             </ul>
         </div>
-    
+
         <!-- Right Menu -->
         <div class="collapse navbar-collapse d-none d-md-flex order-lg-3" id="navbar-right">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/blog.html">Blog</a>
+                    <a class="nav-link" href="pages/blog.html" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"
+                        target="_blank" aria-label="Link to an Instagram"><i class="bi bi-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a>
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV" target="_blank"
+                        aria-label="Link to Threads"><i class="bi bi-threads"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share"
+                        target="_blank" aria-label="Link to a Facebook page"><i class="bi bi-facebook"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    
+
     <!-- Offcanvas for Left Menu -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-left-label">
         <div class="offcanvas-header">
@@ -102,9 +109,10 @@
             </ul>
         </div>
     </div>
-    
+
     <!-- Combined Offcanvas menu -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined" aria-labelledby="offcanvas-combined-label">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-combined"
+        aria-labelledby="offcanvas-combined-label">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvas-combined-label"><a href="index.html">Little Lemon</a></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
@@ -123,18 +131,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#contact-us">Contact</a>
                 </li>
-                <hr>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/blog.html">Blog</a>
+                    <a class="nav-link" href="pages/blog.html" target="_blank">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs">Instagram</a>
+                    <a class="nav-link" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"
+                        target="_blank">Instagram</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV">Threads</a>
+                    <a class="nav-link" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"
+                        target="_blank">Threads</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share">Facebook</a>
+                    <a class="nav-link" href="https://www.facebook.com/groups/4516214278604645/?ref=share"
+                        target="_blank">Facebook</a>
                 </li>
             </ul>
         </div>
@@ -166,18 +176,24 @@
                     <h2 class="menu-block">Menu</h2>
                     <p class="menu-block">
                         At Little Lemon, we believe in keeping things fresh and exciting.
-                        Our <strong>menu</strong> rotates seasonally to highlight the best ingredients and flavors each season has to offer. 
-                        Our chefs use traditional recipes and techniques from Italy, Greece, and Turkey to create dishes that are bold, flavorful, and satisfying.
+                        Our <strong>menu</strong> rotates seasonally to highlight the best ingredients and flavors each
+                        season has to offer.
+                        Our chefs use traditional recipes and techniques from Italy, Greece, and Turkey to create dishes
+                        that are bold, flavorful, and satisfying.
                     </p>
-                    <button type="button" class="btn btn-outline-secondary menu-block" onclick="window.location.href='pages/menu.html'">Explore Our Menu</button>
+                    <button type="button" class="btn btn-outline-secondary menu-block"
+                        onclick="window.location.href='pages/menu.html'">Explore Our Menu</button>
                 </div>
                 <div class="col-4 col-md-2 arrow rounded-5 bg-white">
-                    <dotlottie-player src="https://lottie.host/a9ca6d2b-c043-416f-9629-00661bfd1074/2X4xCvO2X2.json" background="transparent" speed="0.5" loop autoplay class="align-self-center"></dotlottie-player>
+                    <dotlottie-player src="https://lottie.host/a9ca6d2b-c043-416f-9629-00661bfd1074/2X4xCvO2X2.json"
+                        background="transparent" speed="0.5" loop autoplay class="align-self-center"></dotlottie-player>
                 </div>
                 <div class="col-md-4 bg-secondary text-white">
                     <h2 class="book-block">Book</h2>
                     <p class="book-block">
-                        We&rsquo;re located in <strong>Chicago, Illinois</strong>, and open every day to satisfy your Mediterranean cravings. Stop by to explore our rotating seasonal menu and discover new Mediterranean favorites.
+                        We&rsquo;re located in <strong>Chicago, Illinois</strong>, and open every day to satisfy your
+                        Mediterranean cravings. Stop by to explore our rotating seasonal menu and discover new
+                        Mediterranean favorites.
                     </p>
                     <button type="button" class="btn btn-outline-info book-block">Reserve Table Now</button>
                 </div>
@@ -186,7 +202,9 @@
                 <div class="col-md-5 col-lg-3 bg-secondary text-primary order-lg-first">
                     <h2 class="insights-block">Insights</h2>
                     <p class="insights-block">
-                        Dive into the flavors and stories that inspire our dishes. From ingredient spotlights to the history of Mediterranean cuisine, our <strong>blog</strong> offers a closer look at the culinary traditions that shape Little Lemon&rsquo;s menu.
+                        Dive into the flavors and stories that inspire our dishes. From ingredient spotlights to the
+                        history of Mediterranean cuisine, our <strong>blog</strong> offers a closer look at the culinary
+                        traditions that shape Little Lemon&rsquo;s menu.
                     </p>
                     <button type="button" class="btn btn-outline-primary insights-block">See What&rsquo;s New</button>
                 </div>
@@ -207,12 +225,16 @@
                     <div class="col-11 col-md-8 story">
                         <h2>Our Story</h2>
                         <p>
-                            Nestled in the heart of Chicago, Little Lemon is a family-owned Mediterranean restaurant that blends tradition with a modern twist. 
-                            Our menu draws inspiration from Italian, Greek, and Turkish flavors, creating a unique dining experience that&rsquo;s both authentic and innovative. 
-                            Whether you&rsquo;re looking for a cozy spot to enjoy a meal with friends or a quick bite, Little Lemon welcomes you to explore the rich, bold flavors of the Mediterranean.
+                            Nestled in the heart of Chicago, Little Lemon is a family-owned Mediterranean restaurant
+                            that blends tradition with a modern twist.
+                            Our menu draws inspiration from Italian, Greek, and Turkish flavors, creating a unique
+                            dining experience that&rsquo;s both authentic and innovative.
+                            Whether you&rsquo;re looking for a cozy spot to enjoy a meal with friends or a quick bite,
+                            Little Lemon welcomes you to explore the rich, bold flavors of the Mediterranean.
                         </p>
                         <p>
-                            Little Lemon was founded by two Italian brothers, <strong>Mario and Adrian</strong>, who dreamed of sharing their love for Mediterranean cuisine with Chicago.
+                            Little Lemon was founded by two Italian brothers, <strong>Mario and Adrian</strong>, who
+                            dreamed of sharing their love for Mediterranean cuisine with Chicago.
                         </p>
                     </div>
                 </div>
@@ -222,32 +244,43 @@
                     </div>
                     <div class="col-md-6 col-lg-4 cards">
                         <div class="card h-100 bg-secondary">
-                            <img src="img/mario.jpg" class="card-img-top" alt="Mario the restaurant owner in the kitchen">
+                            <img src="img/mario.jpg" class="card-img-top"
+                                alt="Mario the restaurant owner in the kitchen">
                             <div class="card-body text-white position-relative">
                                 <h4 class="card-title">Mario Draghi</h4>
                                 <h5 class="card-subtitle">Chef</h5>
                                 <p class="card-text">
-                                    Mario, one of the founders of Little Lemon, grew up in Italy and has spent years perfecting his craft in the kitchen. His dishes are rooted in family recipes passed down through generations, with just the right amount of creativity and a modern twist. 
-                                    Mario believes that food is a way of connecting with loved ones, and he brings this passion to every dish he creates at Little Lemon.
+                                    Mario, one of the founders of Little Lemon, grew up in Italy and has spent years
+                                    perfecting his craft in the kitchen. His dishes are rooted in family recipes passed
+                                    down through generations, with just the right amount of creativity and a modern
+                                    twist.
+                                    Mario believes that food is a way of connecting with loved ones, and he brings this
+                                    passion to every dish he creates at Little Lemon.
                                 </p>
-                                <a class="card-link text-primary position-absolute bottom-0 end-0" href="pages/blog.html">Learn More</a>
+                                <a class="card-link text-primary position-absolute bottom-0 end-0"
+                                    href="pages/menu.html">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 cards">
                         <div class="card h-100 bg-primary">
-                            <img src="img/adrian.jpg" class="card-img-top" alt="Adrian the restaurant founder behindthe laptop">
+                            <img src="img/adrian.jpg" class="card-img-top"
+                                alt="Adrian the restaurant founder behindthe laptop">
                             <div class="card-body position-relative">
                                 <h4 class="card-title">Adrian Newey</h4>
                                 <h5 class="card-subtitle">CMO</h5>
                                 <p class="card-text">
-                                    Adrian, on the other hand, is the marketing mind behind Little Lemon. Thanks to his vision, the restaurant has evolved from a traditional Italian eatery to a vibrant spot showcasing flavors from across the Mediterranean. 
-                                    Together, the brothers have created a warm, rustic space where everyone can enjoy delicious food and a welcoming atmosphere.
+                                    Adrian, on the other hand, is the marketing mind behind Little Lemon. Thanks to his
+                                    vision, the restaurant has evolved from a traditional Italian eatery to a vibrant
+                                    spot showcasing flavors from across the Mediterranean.
+                                    Together, the brothers have created a warm, rustic space where everyone can enjoy
+                                    delicious food and a welcoming atmosphere.
                                 </p>
-                                <a class="card-link text-secondary position-absolute bottom-0 end-0" href="pages/blog.html">Learn More</a>
+                                <a class="card-link text-secondary position-absolute bottom-0 end-0"
+                                    href="pages/blog.html">Learn More</a>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>
@@ -265,31 +298,36 @@
                     <div class="form-container bg-secondary text-white">
                         <div class="form pb-2">
                             <form id="contact-form" action="#" method="post" class="row" autocomplete="off">
-                              <div class="col-lg-6 col-md mb-3">
-                                <label for="inputFirstName" class="form-label">First name *</label>
-                                <input type="text" id="inputFirstName" data-field="first-name" name="fname" class="form-control required-field" required>
-                                <div class="feedback pt-2" aria-live="polite"></div>
-                            </div>
-                              <div class="col-lg-6 col-md mb-1">
-                                <label for="inputLastName" class="form-label">Last name *</label>
-                                <input type="text" id="inputLastName" data-field="last-name" name="lname" class="form-control required-field" required>
-                                <div class="feedback pt-2" aria-live="polite"></div>
-                              </div>
-                              <div class="col-lg-12 mb-1">
-                                <label for="inputEmail" class="form-label">Email *</label>
-                                <input type="email" id="inputEmail" data-field="email" name="email" class="form-control required-field" required>
-                                <div class="feedback pt-2" aria-live="polite"></div>
-                              </div>
-                              <div class="col-lg-12 mb-1">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea name="message" placeholder="Feel free to tell me.." id="message" rows="8" class="form-control"></textarea>
-                              </div>
-                              <div class="text-center d-grid mt-1">
-                                <button id="submit-form" type="submit" class="btn btn-primary rounded-pill py-3 submit-contact-form">
-                                    Submit
-                                    <i class="bi bi-send"></i>
-                                </button>
-                              </div>
+                                <div class="col-lg-6 col-md mb-3">
+                                    <label for="inputFirstName" class="form-label">First name *</label>
+                                    <input type="text" id="inputFirstName" data-field="first-name" name="fname"
+                                        class="form-control required-field" required>
+                                    <div class="feedback pt-2" aria-live="polite"></div>
+                                </div>
+                                <div class="col-lg-6 col-md mb-1">
+                                    <label for="inputLastName" class="form-label">Last name *</label>
+                                    <input type="text" id="inputLastName" data-field="last-name" name="lname"
+                                        class="form-control required-field" required>
+                                    <div class="feedback pt-2" aria-live="polite"></div>
+                                </div>
+                                <div class="col-lg-12 mb-1">
+                                    <label for="inputEmail" class="form-label">Email *</label>
+                                    <input type="email" id="inputEmail" data-field="email" name="email"
+                                        class="form-control required-field" required>
+                                    <div class="feedback pt-2" aria-live="polite"></div>
+                                </div>
+                                <div class="col-lg-12 mb-1">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea name="message" placeholder="Feel free to tell me.." id="message" rows="8"
+                                        class="form-control"></textarea>
+                                </div>
+                                <div class="text-center d-grid mt-1">
+                                    <button id="submit-form" type="submit"
+                                        class="btn btn-primary rounded-pill py-3 submit-contact-form">
+                                        Submit
+                                        <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -317,64 +355,92 @@
     /////////////////////////////////////////////////////////////////////////////////////////////-->
     <div class="container-fluid bg-secondary px-5 pt-5">
         <footer class="py-5 footer">
-          <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Main</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="pages/menu.html" class="nav-link p-0 text-body-secondary">Menu</a></li>
-                <li class="nav-item mb-2"><a href="#about-us" class="nav-link p-0 text-body-secondary">About</a></li>
-                <li class="nav-item mb-2"><a href="pages/book.html" class="nav-link p-0 text-body-secondary">Book</a></li>
-                <li class="nav-item mb-2"><a href="#contact-us" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Follow us</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="pages/blog.html" class="nav-link p-0 text-body-secondary">Blog</a></li>
-                <li class="nav-item mb-2"><a href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs" class="nav-link p-0 text-body-secondary">Instagram</a></li>
-                <li class="nav-item mb-2"><a href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV" class="nav-link p-0 text-body-secondary">Threads</a></li>
-                <li class="nav-item mb-2"><a href="https://www.facebook.com/groups/4516214278604645/?ref=share" class="nav-link p-0 text-body-secondary">Facebook</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Terms and Policies</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" onclick="alert('Privacy Policy will be available soon')" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
-                <li class="nav-item mb-2"><a href="#" onclick="alert('Terms and Conditions will be available soon')" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
-                <li class="nav-item mb-2"><a href="#" onclick="alert('FAQs will be available soon')" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form action="#" id="subscribe-form" autocomplete="on">
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="subscribe" class="visually-hidden">Email address</label>
-                  <input id="subscribe" type="text" class="form-control" placeholder="Email address" required>
-                  <button class="btn btn-primary" type="submit" id="subscribe-btn">Subscribe</button>
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Main</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="pages/menu.html"
+                                class="nav-link p-0 text-body-secondary">Menu</a></li>
+                        <li class="nav-item mb-2"><a href="#about-us" class="nav-link p-0 text-body-secondary">About</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="pages/book.html"
+                                class="nav-link p-0 text-body-secondary">Book</a></li>
+                        <li class="nav-item mb-2"><a href="#contact-us" class="nav-link p-0 text-body-secondary">Contact
+                                Us</a></li>
+                    </ul>
                 </div>
-                <div class="feedback pt-2" id="subscribe-feedback" aria-live="polite"></div>
-              </form>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Follow us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="pages/blog.html" class="nav-link p-0 text-body-secondary"
+                                target="_blank">Blog</a></li>
+                        <li class="nav-item mb-2"><a
+                                href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"
+                                class="nav-link p-0 text-body-secondary" target="_blank">Instagram</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"
+                                class="nav-link p-0 text-body-secondary" target="_blank">Threads</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/groups/4516214278604645/?ref=share"
+                                class="nav-link p-0 text-body-secondary" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Terms and Policies</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html"
+                                onclick="alert('Privacy Policy will be available soon')"
+                                class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+                        <li class="nav-item mb-2"><a href="index.html#about-us"
+                                onclick="alert('Terms and Conditions will be available soon')"
+                                class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="index.html#contact-us"
+                                onclick="alert('FAQs will be available soon')"
+                                class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form action="#" id="subscribe-form" autocomplete="on">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="subscribe" class="visually-hidden" aria-label="Email address field"
+                                title="Email address"></label>
+                            <input id="subscribe" type="text" class="form-control" placeholder="Email address" required>
+                            <button class="btn btn-primary" type="submit" id="subscribe-btn">Subscribe</button>
+                        </div>
+                        <div class="feedback pt-2" id="subscribe-feedback" aria-live="polite"></div>
+                    </form>
+                </div>
             </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2024 Little Lemon, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs"><i class="bi bi-instagram"></i></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV"><i class="bi bi-threads"></i></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/groups/4516214278604645/?ref=share"><i class="bi bi-facebook"></i></a></li>
-            </ul>
-          </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2024 Little Lemon, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis"
+                            href="https://www.instagram.com/littlelemonrhw?igsh=MWRrYm15cjR0c3Rs" target="_blank"
+                            aria-label="Link to an Instagram"><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis"
+                            href="https://www.threads.net/@mad_giada/post/C2e36H7IsZV" target="_blank"
+                            aria-label="Link to Threads"><i class="bi bi-threads"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-body-emphasis"
+                            href="https://www.facebook.com/groups/4516214278604645/?ref=share" target="_blank"
+                            aria-label="Link to a Facebook page"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+            </div>
         </footer>
-      </div>
+    </div>
+    <a href="#" class="btn btn-success back-to-top rounded-pill text-white" role="button" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/footer.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
+
 </html>

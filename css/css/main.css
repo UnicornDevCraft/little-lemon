@@ -40210,9 +40210,12 @@ html .navbar .navbar-toggler.d-md-block {
     justify-self: start;
   }
 }
+html .offcanvas-header {
+  border-bottom: 1px solid #f4ce14;
+}
 html .offcanvas-title {
   font-family: "Bigshot One", sans-serif;
-  color: #f4ce14;
+  color: #8a730e;
 }
 html .offcanvas-title a {
   text-decoration: none !important;
@@ -40226,6 +40229,29 @@ html .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
   text-shadow: 1px 1px 5px #fae17c;
 }
 
+.nav-link.on-tab {
+  position: relative;
+  color: #095256 !important;
+}
+.nav-link.on-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #f4ce14;
+  animation: underline 0.5s ease-in-out;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 /* stylelint-disable scss/load-partial-extension */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -141030,11 +141056,10 @@ textarea.form-control-lg {
 
 .menu .menu-header {
   padding-top: 6rem;
-  padding-bottom: 0;
+  padding-bottom: 4rem;
 }
 .menu .menu-header h1, .menu .menu-header .h1 {
   font-family: "Bigshot One", sans-serif;
-  color: #f4ce14;
 }
 .menu .menu-header p {
   font-family: Lora, sans-serif;
@@ -141076,7 +141101,7 @@ textarea.form-control-lg {
 }
 .menu .menu-section .row .card h3, .menu .menu-section .row .card .h3 {
   font-family: "Cantata One", serif;
-  color: #f4ce14;
+  color: #8a730e;
   font-weight: bold;
   font-size: 1.2rem;
   background-color: transparent;
@@ -141089,7 +141114,8 @@ textarea.form-control-lg {
 }
 .menu .menu-section .row .card p {
   color: #095256;
-  font-size: 0.95em;
+  font-family: Lora, sans-serif;
+  font-size: 1.1rem;
   margin-top: 2rem;
 }
 .menu .menu-section .row .card span.text-dark {
@@ -141099,7 +141125,7 @@ textarea.form-control-lg {
 }
 
 .modal-header #dish-name {
-  color: #f4ce14;
+  color: #8a730e;
 }
 .modal-header #dish-name .btn-close {
   margin-left: 1rem;
@@ -161227,15 +161253,15 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 
-.modal-content .modal-body {
-  margin-top: 4rem;
+.modal-content .message-body {
+  margin: 4rem 0;
 }
-.modal-content .modal-body .res-info {
+.modal-content .message-body .res-info {
   font-family: Italiana, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.modal-content .modal-body .res-add-info {
+.modal-content .message-body .res-add-info {
   font-family: Lora, serif;
   margin-top: 1rem;
 }
@@ -181319,9 +181345,17 @@ textarea.form-control-lg {
 }
 
 .blog-content .featured-post {
-  background-image: url("../../../img/sunshine2.png");
+  background-image: url("../../../img/sunshine.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 4rem;
   padding: 7rem 2rem 7rem 4rem;
+}
+@media (min-width: 992px) {
+  .blog-content .featured-post {
+    background-image: url("../../../img/sunshine2.png");
+  }
 }
 .blog-content .lead {
   background-color: rgba(9, 82, 86, 0.5);
@@ -181345,6 +181379,9 @@ textarea.form-control-lg {
   font-weight: 700;
   color: #495D58;
 }
+.blog-content .short-posts .short-post {
+  flex-wrap: wrap;
+}
 .blog-content .short-posts h3, .blog-content .short-posts .h3 {
   font-family: "Cantata One", sans-serif;
 }
@@ -181362,28 +181399,44 @@ textarea.form-control-lg {
 }
 .blog-content .blog-post li {
   color: #495D58;
+  font-family: Lora, sans-serif;
 }
-.blog-content .blog-post li p {
-  display: inline;
+.blog-content .blog-post li strong {
+  font-family: Italiana, serif;
 }
-
-.h-250 {
-  height: 250px;
+.blog-content table {
+  font-family: Lora, sans-serif;
+}
+.blog-content table th {
+  color: #095256;
+}
+.blog-content table td {
+  color: #495D58;
+}
+.blog-content .recent-posts .post-image {
+  width: 100%;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
-  .h-250 {
-    height: 250px;
+  .blog-content .recent-posts .post-image {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
+.blog-content .recent-posts .post-description {
+  color: #095256;
+  font-family: "Cantata One", sans-serif;
+}
 
-/* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
 }
 
 .blog-post-meta {
   margin-bottom: 1.25rem;
-  color: #727272;
+  color: #caf7e2;
 }
 
 /* stylelint-disable scss/load-partial-extension */
@@ -201469,6 +201522,15 @@ textarea.form-control-lg {
 .footer .disabled-button {
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
